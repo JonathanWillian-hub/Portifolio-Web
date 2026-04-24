@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Jonathan Willian</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="img/jonathan.ico" type="image/x-icon">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar__logo">
+      <span class="logo-bracket">{</span> Jonathan Willian <span class="logo-bracket">}</span>
+    </div>
+    <nav class="navbar__links">
+      <a href="#sobre"     data-i18n="nav-sobre">sobre</a>
+      <a href="#projetos"  data-i18n="nav-projetos">projetos</a>
+      <a href="#tecnologias">tech</a>
+      <a href="#contato"   data-i18n="nav-contato">contato</a>
+    </nav>
+    <div class="navbar__actions">
+      <!-- Lang toggle -->
+      <button class="btn-lang" id="lang-toggle" aria-label="Toggle language">
+        <span class="btn-lang__active">PT</span>
+        <span class="btn-lang__sep">/</span>
+        <span class="btn-lang__inactive">EN</span>
+      </button>
+
+      <a href="https://github.com/JonathanWillian-hub" target="_blank" class="icon-link" aria-label="GitHub">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/jonathan-willian-470a48392/" target="_blank" class="icon-link" aria-label="LinkedIn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+          <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+        </svg>
+      </a>
+      <a href="mailto:jonathanpaula172@gmail.com" class="icon-link" aria-label="Email">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+      </a>
+      <a href="img/Currículo Jonathan Willian de Paula Santos.pdf" download class="btn-download">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        <span data-i18n="btn-cv">currículo</span>
+      </a>
+    </div>
+    <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__noise"></div>
+    <div class="hero__content">
+      <p class="hero__tag" data-i18n="hero-tag">disponível para trabalho</p>
+      <h1 class="hero__title">
+        <span data-i18n="hero-greeting">Olá, eu sou</span><br />
+        <span class="hero__name">Jonathan Willian</span>
+      </h1>
+      <p class="hero__subtitle" data-i18n="hero-subtitle">Desenvolvedor FrontEnd e estudante de Cibersegurança</p>
+      <div class="hero__cta">
+        <a href="#projetos" class="btn-primary" data-i18n="hero-cta-projects">ver projetos</a>
+        <a href="#sobre"    class="btn-ghost"   data-i18n="hero-cta-about">sobre mim</a>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__circle hero__circle--1"></div>
+      <div class="hero__circle hero__circle--2"></div>
+      <div class="hero__avatar"><span>JW</span></div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="sobre-tag">01 — sobre</span>
+      <h2 class="section-title" data-i18n="sobre-title">Quem sou eu</h2>
+    </div>
+    <div class="sobre__grid">
+      <div class="sobre__text">
+        <p data-i18n="sobre-p1">Olá! Sou um desenvolvedor apaixonado por transformar ideias em produtos digitais funcionais e bonitos. Tenho experiência em desenvolvimento web, com foco em criar experiências de usuário memoráveis.</p>
+        <p data-i18n-html="sobre-p2">Atualmente focado em <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>, sempre buscando aprender novas tecnologias e resolver problemas complexos de forma inteligente.</p>
+      </div>
+      <div class="sobre__stats">
+        <div class="stat-card">
+          <span class="stat-number">1+</span>
+          <span class="stat-label" data-i18n="stat-exp">anos de experiência</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">2+</span>
+          <span class="stat-label" data-i18n="stat-proj">projetos entregues</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">∞</span>
+          <span class="stat-label" data-i18n="stat-learn">vontade de aprender</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="projetos" id="projetos">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="projetos-tag">02 — projetos</span>
+      <h2 class="section-title" data-i18n="projetos-title">O que eu construí</h2>
+    </div>
+    <div class="projetos__grid">
+
+      <!-- Projeto 1 -->
+      <article class="project-card project-card--featured">
+        <div class="project-card__tag" data-i18n="proj1-tag">destaque</div>
+        <div class="project-card__content">
+          <h3 class="project-card__title">OutletSenai</h3>
+          <p class="project-card__desc" data-i18n="proj1-desc">Primeira página Html, CSS e JavaScript que criei, em conjunto com amigos, para apresentação em aula, entuito de entrar em contato com as tecnologias de criação Web</p>
+          <div class="project-card__tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+        <div class="project-card__links">
+          <a href="https://github.com/JonathanWillian-hub/Site_de_vendas_tenis" class="link-icon" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <span data-i18n="link-code">código</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Projeto 2 -->
+      <article class="project-card project-card--featured">
+        <div class="project-card__content">
+          <h3 class="project-card__title">Mario Web</h3>
+          <p class="project-card__desc" data-i18n="proj2-desc">Tomei como base o jogo super mário, criando uma versão web interativa com HTML, CSS e JavaScript.</p>
+          <div class="project-card__tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+        <div class="project-card__links">
+          <a href="https://github.com/JonathanWillian-hub/Mario-Web" class="link-icon" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <span data-i18n="link-code">código</span>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- TECNOLOGIAS -->
+  <section class="tecnologias" id="tecnologias">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="tech-tag">03 — tecnologias</span>
+      <h2 class="section-title" data-i18n="tech-title">Meu stack</h2>
+    </div>
+    <div class="tech__categories">
+
+      <div class="tech__category">
+        <h3 class="tech__category-title" data-i18n="tech-frontend">Frontend</h3>
+        <div class="tech__pills">
+          <span class="pill pill--blue">HTML5</span>
+          <span class="pill pill--blue">CSS3</span>
+          <span class="pill pill--blue">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="tech__category">
+        <h3 class="tech__category-title" data-i18n="tech-backend">Backend</h3>
+        <div class="tech__pills">
+          <span class="pill pill--coral">Python</span>
+          <span class="pill pill--coral">FastAPI</span>
+        </div>
+      </div>
+
+      <div class="tech__category">
+        <h3 class="tech__category-title" data-i18n="tech-db">Banco de dados</h3>
+        <div class="tech__pills">
+          <span class="pill pill--teal">MariaDB</span>
+          <span class="pill pill--teal">MongoDB</span>
+          <span class="pill pill--teal">MySQL</span>
+        </div>
+      </div>
+
+      <div class="tech__category">
+        <h3 class="tech__category-title" data-i18n="tech-devops">DevOps &amp; Ferramentas</h3>
+        <div class="tech__pills">
+          <span class="pill pill--purple">Git</span>
+          <span class="pill pill--purple">AWS</span>
+          <span class="pill pill--purple">GitHub</span>
+          <span class="pill pill--purple">Linux</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTATO / FOOTER -->
+  <footer class="contato" id="contato">
+    <div class="contato__content">
+      <span class="section-tag" data-i18n="contato-tag">04 — contato</span>
+      <h2 class="contato__title" data-i18n="contato-title">Vamos conversar?</h2>
+      <p class="contato__text" data-i18n="contato-text">Estou aberto a novas oportunidades, projetos freelance ou apenas uma boa conversa sobre tecnologia.</p>
+      <a href="mailto:jonathanpaula172@gmail.com" class="btn-primary btn-large">jonathanpaula172@gmail.com</a>
+      <div class="contato__social">
+        <a href="https://github.com/JonathanWillian-hub" target="_blank" class="social-link">GitHub</a>
+        <span class="social-dot">·</span>
+        <a href="https://www.linkedin.com/in/jonathan-willian-470a48392/" target="_blank" class="social-link">LinkedIn</a>
+        <span class="social-dot">·</span>
+        <a href="img/Currículo Jonathan Willian de Paula Santos.pdf" download class="social-link" data-i18n="btn-cv">Currículo</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ---- NAV ---- */
+    const toggle = document.querySelector('.menu-toggle');
+    const links  = document.querySelector('.navbar__links');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        links.classList.remove('open');
+        document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    /* ---- I18N ---- */
+    const translations = {
+      pt: {
+        'nav-sobre':        'sobre',
+        'nav-projetos':     'projetos',
+        'nav-contato':      'contato',
+        'hero-tag':         'disponível para trabalho',
+        'hero-greeting':    'Olá, eu sou',
+        'hero-subtitle':    'Desenvolvedor FrontEnd',
+        'hero-cta-projects':'ver projetos',
+        'hero-cta-about':   'sobre mim',
+        'sobre-tag':        '01 — sobre',
+        'sobre-title':      'Quem sou eu',
+        'sobre-p1':         'Olá! Sou um desenvolvedor apaixonado por transformar ideias em produtos digitais funcionais e bonitos. Tenho experiência em desenvolvimento web, com foco em criar experiências de usuário memoráveis.',
+        'sobre-p2':         'Atualmente focado em <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>, sempre buscando aprender novas tecnologias e resolver problemas complexos de forma inteligente.',
+        'stat-exp':         'anos de experiência',
+        'stat-proj':        'projetos entregues',
+        'stat-learn':       'vontade de aprender',
+        'projetos-tag':     '02 — projetos',
+        'projetos-title':   'O que eu construí',
+        'proj1-tag':        'destaque',
+        'proj1-desc':       'Primeira página Html, CSS e JavaScript que criei, em conjunto com amigos, para apresentação em aula, entuito de entrar em contato com as tecnologias de criação Web',
+        'proj2-desc':       'Tomei como base o jogo super mário, criando uma versão web interativa com HTML, CSS e JavaScript.',
+        'link-code':        'código',
+        'tech-tag':         '03 — tecnologias',
+        'tech-title':       'Meu stack',
+        'tech-frontend':    'Frontend',
+        'tech-backend':     'Backend',
+        'tech-db':          'Banco de dados',
+        'tech-devops':      'DevOps & Ferramentas',
+        'contato-tag':      '04 — contato',
+        'contato-title':    'Vamos conversar?',
+        'contato-text':     'Estou aberto a novas oportunidades, projetos freelance ou apenas uma boa conversa sobre tecnologia.',
+        'btn-cv':           'currículo',
+      },
+      en: {
+        'nav-sobre':        'about',
+        'nav-projetos':     'projects',
+        'nav-contato':      'contact',
+        'hero-tag':         'available for work',
+        'hero-greeting':    'Hello, I am',
+        'hero-subtitle':    'FrontEnd Developer',
+        'hero-cta-projects':'see projects',
+        'hero-cta-about':   'about me',
+        'sobre-tag':        '01 — about',
+        'sobre-title':      'Who I am',
+        'sobre-p1':         "Hello! I'm a developer passionate about turning ideas into functional and beautiful digital products. I have experience in web development, focused on creating memorable user experiences.",
+        'sobre-p2':         'Currently focused on <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong>, always looking to learn new technologies and solve complex problems intelligently.',
+        'stat-exp':         'years of experience',
+        'stat-proj':        'delivered projects',
+        'stat-learn':       'willingness to learn',
+        'projetos-tag':     '02 — projects',
+        'projetos-title':   'What I built',
+        'proj1-tag':        'featured',
+        'proj1-desc':       'First HTML, CSS and JavaScript page I created together with friends for a class presentation, aiming to get in touch with web development technologies.',
+        'proj2-desc':       'Based on the Super Mario game, I created an interactive web version using HTML, CSS and JavaScript.',
+        'link-code':        'code',
+        'tech-tag':         '03 — technologies',
+        'tech-title':       'My stack',
+        'tech-frontend':    'Frontend',
+        'tech-backend':     'Backend',
+        'tech-db':          'Database',
+        'tech-devops':      'DevOps & Tools',
+        'contato-tag':      '04 — contact',
+        'contato-title':    "Let's talk?",
+        'contato-text':     "I'm open to new opportunities, freelance projects or just a good conversation about technology.",
+        'btn-cv':           'résumé',
+      }
+    };
+
+    let currentLang = 'pt';
+
+    function applyLang(lang) {
+      const t = translations[lang];
+
+      // Plain text nodes
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (t[key] !== undefined) el.textContent = t[key];
+      });
+
+      // Nodes that need innerHTML (contain <strong> etc.)
+      document.querySelectorAll('[data-i18n-html]').forEach(el => {
+        const key = el.getAttribute('data-i18n-html');
+        if (t[key] !== undefined) el.innerHTML = t[key];
+      });
+
+      // Update <html lang>
+      document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+
+      // Update button labels
+      const btn = document.getElementById('lang-toggle');
+      btn.querySelector('.btn-lang__active').textContent   = lang.toUpperCase();
+      btn.querySelector('.btn-lang__inactive').textContent = lang === 'pt' ? 'EN' : 'PT';
+    }
+
+    document.getElementById('lang-toggle').addEventListener('click', () => {
+      currentLang = currentLang === 'pt' ? 'en' : 'pt';
+      applyLang(currentLang);
+    });
+  </script>
+
+</body>
+</html>
